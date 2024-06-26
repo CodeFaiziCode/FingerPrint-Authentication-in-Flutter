@@ -20,7 +20,11 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Text('Welcome to the Home Screen'),
           ),
           Column(
-            children: [Container()],
+            children: [
+              Container(
+                child: Text('Welcome to the Home Screen'),
+              )
+            ],
           )
         ],
       ),
