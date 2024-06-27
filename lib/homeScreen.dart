@@ -12,22 +12,26 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: Text('Finger Print Authentication'),
+        centerTitle: true,
       ),
       body: Column(
-        children: [
-          Center(
-            child: Text('Welcome to the Home Screen'),
+          // mainAxisAlignment: MainAxisAlignment.center,
+          // children: [
+          //   Center(
+          //     child: Text(
+          //       "Finger Peint Authentication",
+          //       style: TextStyle(fontSize: 20),
+          //     ),
+          //   ),
+          //   SizedBox(height: 20),
+          //   ElevatedButton(
+          //     onPressed: () {},
+          //     child: Text("Authenticate"),
+          //   ),
+          // ],
           ),
-          Column(
-            children: [
-              Container(
-                child: Text('Welcome to the Home Screen'),
-              )
-            ],
-          )
-        ],
-      ),
     );
   }
 }
