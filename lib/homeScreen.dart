@@ -17,21 +17,18 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
       ),
       body: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          // children: [
-          //   Center(
-          //     child: Text(
-          //       "Finger Peint Authentication",
-          //       style: TextStyle(fontSize: 20),
-          //     ),
-          //   ),
-          //   SizedBox(height: 20),
-          //   ElevatedButton(
-          //     onPressed: () {},
-          //     child: Text("Authenticate"),
-          //   ),
-          // ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              "Finger Peint Authentication",
+              style: TextStyle(fontSize: 20),
+            ),
           ),
+          SizedBox(height: 20),
+          FloatingActionButton(onPressed: () {}, child: Icon(Icons.fingerprint))
+        ],
+      ),
     );
   }
 }
